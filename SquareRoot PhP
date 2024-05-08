@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareRoot</title>
+</head>
+<body>
+    <?php 
+    $i = 25;
+    function SquareRoot($i) {
+        $x =$i/2;
+        $y = 0;
+        while ($x - $y){
+            $y = $x;
+            $x = ($x + $i / $x) /2;
+
+        }
+        return $x;
+    }
+        $SquareRoot = SquareRoot($i);
+        echo $SquareRoot;
+
+    ?>
+</body>
+</html>
